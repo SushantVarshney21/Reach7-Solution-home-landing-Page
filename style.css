@@ -14,12 +14,17 @@ nav{
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%);
-    padding: 12px 70px;
+    padding: 25px 70px;
     color: white;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    z-index: 999;
+}
+
+a{
+ text-decoration: none;
 }
 
 nav .right{
@@ -38,6 +43,7 @@ nav .right{
    align-items: center;
    justify-content: space-between;
 }
+
 nav .left ul{
     display: flex;
     align-items: center;
@@ -49,12 +55,20 @@ nav .left ul li{
     font-size: 20px;
     margin-right: 12px;
     color: rgba(255, 255, 255, 0.658);
+    transition: 0.5s;
 }
 
-.active{
- color: white;
- border-bottom: 2px solid white;
+nav .left ul  .active{
+    color:white;
+    border-bottom: 2px solid white;
+   }    
+
+nav .left ul li:hover{
+    color: white;
+    border-bottom: 2px solid white;
 }
+
+
 
 .contact-no{
     font-size: 15px;
@@ -62,6 +76,10 @@ nav .left ul li{
     padding: 8px 12px;
     margin-left: 25px;
     border-radius: 4px;
+    transition: 1s;
+}
+.contact-no:hover{
+    border: 2px solid white;
 }
 
 .hero{
@@ -92,6 +110,7 @@ nav .left ul li{
     width: 70%;
     height: 70%;
     object-fit: cover;
+    margin-top: 70px;
     animation: move 10s ease-in-out infinite;
 }
 
@@ -109,8 +128,14 @@ nav .left ul li{
     border: 2px solid white;
     color: white;
     border-radius: 6px;
-    padding: 12px;
-    margin-top: 18px;
+    padding: 12px 30px;
+    margin-top: 18px; 
+   transition: 0.5s;
+
+}
+.hero .left button:hover{
+    color: blueviolet;
+    background-color: white;
 }
 
 .about-us{
@@ -154,6 +179,11 @@ nav .left ul li{
     margin-top: 12px;
 }
 
+.about-us .left button:hover{
+    background: linear-gradient(45deg, rgb(87, 58, 250) 0%, rgba(116, 15, 214, 0.9) 100%);
+
+}
+
 .about-us .right{
     width: 50%;
     display: flex;
@@ -172,8 +202,9 @@ nav .left ul li{
 
 }
 .service h3{
+    color: blueviolet;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     margin: 20px;
 }
 
@@ -183,13 +214,22 @@ nav .left ul li{
     align-items: center;
     flex-wrap: wrap;
 }
-
+    
 .card{
     width: 350px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
     padding: 18px;
     margin: 20px;
+    cursor: pointer;
+    transition: 0.2s;
 }
+.card:hover{
+    margin-top: 10px;
+    scale: 1.2;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+
 .card h4{
     text-align: center;
     margin-bottom: 8px;
