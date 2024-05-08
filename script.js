@@ -8,7 +8,7 @@ gsap.from("nav .logo",{
 })
 
 gsap .to("nav .left ul li",{
-  x:-250,
+  x:-200,
    duration:1,
    delay:0.5,
    stagger:1
