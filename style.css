@@ -564,7 +564,7 @@ nav .left ul li:hover{
 }
 
 .footer{
-    padding: 50px 80px;
+    padding: 5px 80px 50px 80px;
     background:linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%);
     color: #fff;
     display: flex;
@@ -573,13 +573,19 @@ nav .left ul li:hover{
 }
 
 .footer .first{
-    width: 40%;
+    width: 35%;
+}
+
+.footer .second:nth-child(odd){
+    margin-top: 18px;
+    margin-left: 18px;
 }
 
 
 .footer .third{
     width: 30%;
-    margin-left: 22px;
+    margin-left: 70px;
+    margin-top: 80px;
 }
 .footer .third h4{
     font-size: 25px1;
@@ -613,6 +619,11 @@ nav .left ul li:hover{
     background-color: #fff;
     padding: 12px 25px;
     border-radius: 6px;
+    font-size: 15px;
+}
+
+.footer .third button:hover{
+    background-color: #DCDCDC;
 }
 
 .third .btn-foot{
@@ -625,9 +636,14 @@ nav .left ul li:hover{
 
 .third .btn-foot button {
     padding: 12px 60px;
-    margin: 6px;
+    margin: 3px;
     background-color: black;
     color:white;
+    font-size: 18px;
+}
+
+.third .btn-foot button:hover{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
 }
 
 .third .btn-foot button:nth-child(2){
@@ -635,8 +651,16 @@ nav .left ul li:hover{
     color: black;
 }
 
+.third .btn-foot button:nth-child(2):hover{
+    background: linear-gradient(109.6deg, rgb(255, 230, 109) 11.2%, rgb(87, 232, 107) 100.2%);
+}
+
 .third .btn-foot button:nth-child(3){
     background-color: red;
+}
+
+.third .btn-foot button:nth-child(3):hover{
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
 }
 
 
