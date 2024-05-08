@@ -1,4 +1,5 @@
 var tAbout = gsap.timeline()
+var tContact = gsap.timeline()
 
 gsap.from("nav .logo",{
   y:-100,
@@ -116,7 +117,44 @@ gsap.from(" .flip-card-inner .flip-card-front",{
     end:"top 20%",
     scrub:2,
   }
- 
+})
+
+gsap.from(".price .card-con .card",{
+  opacity:0,
+  duration:2,
+  scrollTrigger:{
+    trigger:" .price .card-con ",
+    scroller:"body",
+    marker:true,
+    start:"top 60%",
+    end:"top 20%",
+    scrub:2,
+  }
+})
+
+
+gsap.from(".contact .top   ",{
+  opacity:0,
+  duration:4,
+  scrollTrigger:{
+    trigger:".contact",
+    scroller:"body",
+    start:"top 60%",
+    end:"top 20%",
+    scrub:2
+  }
+})
+
+gsap.from(".contact .bottom",{
+  opacity:0,
+  duration:5,
+  scrollTrigger:{
+    trigger:".contact",
+    scroller:"body",
+    start:"top 80%",
+    end:"top 50%",
+    scrub:2
+  }
 })
 
 

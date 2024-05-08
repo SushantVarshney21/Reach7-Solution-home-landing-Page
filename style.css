@@ -533,5 +533,80 @@ nav .left ul li:hover{
     font-size: 22px;
 }
 
+.footer{
+    padding: 50px 80px;
+    background:linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .first{
+    width: 40%;
+}
+
+
+.footer .third{
+    width: 30%;
+    margin-left: 22px;
+}
+.footer .third h4{
+    font-size: 25px1;
+}
+
+.footer p{
+    line-height: 20px;
+    margin: 12px 0px;
+    width: 80%;
+}
+
+.footer .second p{
+    line-height: 20px;
+    margin: 12px 0px;
+}
+
+.footer i{
+    font-size: 12px;
+    margin-right: 6px;
+}
+.footer h2{
+    width: 70%;
+}
+
+.footer h3,h2{
+    font-size: 25px;
+}
+
+.footer .third button{
+    border: none;
+    background-color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+}
+
+.third .btn-foot{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.third .btn-foot button {
+    padding: 12px 60px;
+    margin: 6px;
+    background-color: black;
+    color:white;
+}
+
+.third .btn-foot button:nth-child(2){
+    background-color: yellow;
+    color: black;
+}
+
+.third .btn-foot button:nth-child(3){
+    background-color: red;
+}
 
 
