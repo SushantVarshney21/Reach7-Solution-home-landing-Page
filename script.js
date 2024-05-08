@@ -1,3 +1,18 @@
+var tAbout = gsap.timeline()
+
+gsap.from("nav .logo",{
+  y:-100,
+  duration:2,
+  delay:0.5
+})
+
+gsap .to("nav .left ul li",{
+  x:-250,
+   duration:1,
+   delay:0.5,
+   stagger:1
+})
+
 gsap.from(".hero .right img",{
     x:600,
     duration:2,
@@ -9,11 +24,99 @@ gsap.from(".hero .left",{
     delay:0.5
 })
 
-gsap.to("nav .left ul li",{
-   x:-250,
-    duration:1,
-    delay:1,
-    stagger:1
+tAbout.from(".about-us .left",{
+  x:-800,
+   duration:1,
+   delay:0.5,
+   scrollTrigger:".about-us .left"
+})
+
+gsap.from(".about-us .right",{
+  x:800,
+   duration:1,
+   scrollTrigger:{
+    trigger:".about-us ",
+    scroller:"body",
+    marker:true,
+    start:"top 60%",
+    end:"topp 30%",
+    scrub:2,
+  }
+ 
+})
+
+tAbout.from(".about-us .left ul li",{
+  opacity:0,
+  duration:2,
+  stagger:1,
+  scrollTrigger:{
+    trigger:".about-us .left ul ",
+    scroller:"body",
+    marker:true,
+    start:"top 60%",
+    end:"topp 30%",
+    scrub:2,
+  }
+})
+
+gsap.from(".service .card-con .card",{
+  rotate:360,
+  opacity:0,
+  duration:1,
+  scrollTrigger:{
+    trigger:".service .card-con ",
+    scroller:"body",
+    marker:true,
+    start:"top 60%",
+    end:"topp 20%",
+    scrub:2,
+  }
+ 
+})
+
+gsap.from(" .feature .fea-info-con .left h4 ",{
+  opacity:0,
+  duration:1,
+  stagger:1,
+  scrollTrigger:{
+    trigger:" .feature .fea-info-con .left ",
+    scroller:"body",
+    marker:true,
+    start:"top 60%",
+    end:"top 20%",
+    scrub:2,
+  }
+ 
+})
+
+gsap.from(" .feature .fea-info-con .right ",{
+  x:800,
+  duration:1,
+  stagger:1,
+  scrollTrigger:{
+    trigger:" .feature .fea-info-con ",
+    scroller:"body",
+    marker:true,
+    start:"top 60%",
+    end:"top 20%",
+    scrub:2,
+  }
+ 
+})
+
+gsap.from(" .flip-card-inner .flip-card-front",{
+  rotate:-360,
+  opacity:0,
+  duration:1,
+  scrollTrigger:{
+    trigger:" .flip-card-inner ",
+    scroller:"body",
+    marker:true,
+    start:"top 60%",
+    end:"top 20%",
+    scrub:2,
+  }
+ 
 })
 
 
